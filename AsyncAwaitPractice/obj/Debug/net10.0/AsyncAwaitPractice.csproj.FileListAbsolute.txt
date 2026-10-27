@@ -1,0 +1,15 @@
+C:\Users\mahih\source\repos\AsyncAwaitPractice\AsyncAwaitPractice\obj\Debug\net10.0\AsyncAwaitPractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mahih\source\repos\AsyncAwaitPractice\AsyncAwaitPractice\obj\Debug\net10.0\AsyncAwaitPractice.AssemblyInfoInputs.cache
+C:\Users\mahih\source\repos\AsyncAwaitPractice\AsyncAwaitPractice\obj\Debug\net10.0\AsyncAwaitPractice.AssemblyInfo.cs
+C:\Users\mahih\source\repos\AsyncAwaitPractice\AsyncAwaitPractice\obj\Debug\net10.0\AsyncAwaitPractice.csproj.CoreCompileInputs.cache
+C:\Users\mahih\source\repos\AsyncAwaitPractice\AsyncAwaitPractice\bin\Debug\net10.0\AsyncAwaitPractice.exe
+C:\Users\mahih\source\repos\AsyncAwaitPractice\AsyncAwaitPractice\bin\Debug\net10.0\AsyncAwaitPractice.deps.json
+C:\Users\mahih\source\repos\AsyncAwaitPractice\AsyncAwaitPractice\bin\Debug\net10.0\AsyncAwaitPractice.runtimeconfig.json
+C:\Users\mahih\source\repos\AsyncAwaitPractice\AsyncAwaitPractice\bin\Debug\net10.0\AsyncAwaitPractice.dll
+C:\Users\mahih\source\repos\AsyncAwaitPractice\AsyncAwaitPractice\bin\Debug\net10.0\AsyncAwaitPractice.pdb
+C:\Users\mahih\source\repos\AsyncAwaitPractice\AsyncAwaitPractice\obj\Debug\net10.0\AsyncAwaitPractice.dll
+C:\Users\mahih\source\repos\AsyncAwaitPractice\AsyncAwaitPractice\obj\Debug\net10.0\refint\AsyncAwaitPractice.dll
+C:\Users\mahih\source\repos\AsyncAwaitPractice\AsyncAwaitPractice\obj\Debug\net10.0\AsyncAwaitPractice.pdb
+C:\Users\mahih\source\repos\AsyncAwaitPractice\AsyncAwaitPractice\obj\Debug\net10.0\AsyncAwaitPractice.genruntimeconfig.cache
+C:\Users\mahih\source\repos\AsyncAwaitPractice\AsyncAwaitPractice\obj\Debug\net10.0\ref\AsyncAwaitPractice.dll
+C:\Users\mahih\source\repos\AsyncAwaitPractice\AsyncAwaitPractice\obj\Debug\net10.0\AsyncAwa.A869BECC.Up2Date
