@@ -142,6 +142,39 @@ namespace AsyncAwaitPractice
             await Task.Delay(delay);
             return $"{message} finished";
         }
+        public async Task ExceptionHandlingAsync()
+        {
+            try
+            {
+                Console.WriteLine("Starting operation...");
+
+                await RiskyOperationAsync();
+
+                Console.WriteLine("Operation succeeded");
+            }
+            catch (InvalidOperationException ex)
+            {
+                Console.WriteLine($"Operation error: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Unexpected error: {ex.Message}");
+            }
+            finally
+            {
+                Console.WriteLine("Cleanup completed");
+            }
+        }
+
+        private async Task RiskyOperationAsync()
+        {
+            await Task.Delay(1000);
+
+            throw new InvalidOperationException(
+                "Learner could not be registered");
+        }
+
+
 
 
 
