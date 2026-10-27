@@ -10,5 +10,7 @@ public class Program
         LearnAsyncProgramming obj = new LearnAsyncProgramming();
 
         await obj.BasicAsync();
+        await obj.TaskTrackingAsync();
+        
     }
 }
