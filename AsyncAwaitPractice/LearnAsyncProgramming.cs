@@ -68,6 +68,23 @@ namespace AsyncAwaitPractice
             Console.WriteLine(
                 $"Sequential execution: {sw.ElapsedMilliseconds} ms");
         }
+        public async Task ConcurrentAsync()
+        {
+            Stopwatch sw = Stopwatch.StartNew();
+
+            Task fileA = DownloadFileAsync("File A", 2000);
+            Task fileB = DownloadFileAsync("File B", 3000);
+
+            Console.WriteLine("Both operations have been started");
+
+            await Task.WhenAll(fileA, fileB);
+
+            sw.Stop();
+
+            Console.WriteLine(
+                $"Concurrent execution: {sw.ElapsedMilliseconds} ms");
+        }
+
 
 
 
