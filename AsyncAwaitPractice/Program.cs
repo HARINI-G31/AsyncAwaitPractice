@@ -11,6 +11,7 @@ public class Program
 
         await obj.BasicAsync();
         await obj.TaskTrackingAsync();
+        await obj.SequentialAsync();
         
     }
 }
