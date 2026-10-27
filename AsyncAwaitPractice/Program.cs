@@ -13,6 +13,7 @@ public class Program
         await obj.TaskTrackingAsync();
         await obj.SequentialAsync();
         await obj.ConcurrentAsync();
+        await obj.WhenAllAsync();
 
     }
 }
