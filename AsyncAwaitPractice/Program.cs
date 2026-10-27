@@ -14,6 +14,7 @@ public class Program
         await obj.SequentialAsync();
         await obj.ConcurrentAsync();
         await obj.WhenAllAsync();
+        await obj.WhenAnyAsync();
 
     }
 }

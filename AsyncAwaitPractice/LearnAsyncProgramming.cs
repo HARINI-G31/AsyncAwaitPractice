@@ -113,6 +113,38 @@ namespace AsyncAwaitPractice
             await Task.Delay(delay);
             return value * 10;
         }
+        public async Task WhenAnyAsync()
+        {
+            Task<string> task1 = GetMessageAsync(
+                "Operation A", 1000);
+
+            Task<string> task2 = GetMessageAsync(
+                "Operation B", 1500);
+
+            Task<string> task3 = GetMessageAsync(
+                "Operation C", 3000);
+
+            Task<string> completedTask = await Task.WhenAny(
+                task1, task2, task3);
+
+            Console.WriteLine(
+                $"First completed: {await completedTask}");
+
+            // Other tasks may still be running.
+            await Task.WhenAll(task1, task2, task3);
+
+            Console.WriteLine("All operations have now completed");
+        }
+
+        private async Task<string> GetMessageAsync(
+            string message, int delay)
+        {
+            await Task.Delay(delay);
+            return $"{message} finished";
+        }
+
+
+
 
 
 
