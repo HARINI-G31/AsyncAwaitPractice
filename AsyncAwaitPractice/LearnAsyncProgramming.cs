@@ -173,6 +173,43 @@ namespace AsyncAwaitPractice
             throw new InvalidOperationException(
                 "Learner could not be registered");
         }
+        public async Task CancellationAsync()
+        {
+            using CancellationTokenSource cts =
+                new CancellationTokenSource();
+
+            Task operation = ProcessLearnersAsync(cts.Token);
+
+            // Demonstration: request cancellation after 2 seconds.
+            await Task.Delay(2000);
+
+            cts.Cancel();
+
+            try
+            {
+                await operation;
+            }
+            catch (OperationCanceledException)
+            {
+                Console.WriteLine("Operation was cancelled");
+            }
+        }
+
+        private async Task ProcessLearnersAsync(
+            CancellationToken token)
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                token.ThrowIfCancellationRequested();
+
+                Console.WriteLine($"Processing learner {i}");
+
+                await Task.Delay(1000, token);
+            }
+
+            Console.WriteLine("All learners processed");
+        }
+
 
 
 
